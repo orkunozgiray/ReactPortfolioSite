@@ -1,18 +1,5 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
-import Particles from 'react-particles-js';
-
-const particleOpt = {
-    particles: {
-        number: {
-            value: 150,
-            density: {
-                enable: true,
-                value_area: 800
-            }
-        }
-    }
-}
 
 class Landing extends Component {
     render() {
@@ -28,29 +15,28 @@ class Landing extends Component {
 
                         <div className="banner-text">
                             <h1>Full Stack Web Developer</h1>
-
                             <hr/>
                             <p>HTML/CSS | Bootsrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</p>
 
                             <div className="social-links">
                             
                                 {/* Linkedin */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                <a href="https://www.linkedin.com/in/orkunozgiray" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-linkedin-square"  aria-hidden="true" />
                                 </a>
 
-                                {/* Github */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                {/* Github */}  
+                                <a href="https://github.com/orkunozgiray" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-github-square"  aria-hidden="true" />
                                 </a>
 
                                 {/* Youtube */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-youtube-square"  aria-hidden="true" />
+                                <a href="https://www.instagram.com/orkunozgiray/?hl=en" rel="noopener noreferrer" target="_blank">
+                                    <i className="fa fa-instagram"  aria-hidden="true" />
                                 </a>
 
                                 {/* Freecodecamp */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                <a href="https://www.freecodecamp.org/fcce6be7b14-9660-485c-8f59-02611ce7c964" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-free-code-camp"  aria-hidden="true" />
                                 </a>
 

@@ -19,7 +19,11 @@ class About extends Component {
             <div className="aboutme-body">
                 <Particles
                     params={particleOpt}
-                />    
+                />
+                <div className="container">
+                    <p className="text1">Who Am I ?</p>
+                    <p className="text2">Orkun Ozgiray</p>
+                </div>     
             </div>
         )
     }

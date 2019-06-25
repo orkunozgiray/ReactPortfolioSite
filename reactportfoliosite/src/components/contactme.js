@@ -19,7 +19,7 @@ class Contact extends Component {
                         <h2>Contact Me</h2>
                         <hr/>
 
-                        <div classNmae="contact-list">
+                        <div className="contact-list">
                             <List>
                                 <ListItem>
                                     <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
@@ -39,6 +39,34 @@ class Contact extends Component {
                                     <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
                                         <i className="fa fa-skype" aria-hidden="true"/>
                                         <a href="https://join.skype.com/invite/zI9Gc1gceOUh" target="_blank">jakdanyel100</a>
+                                    </ListItemContent>
+                                </ListItem>
+
+                                <ListItem>
+                                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                                        <i className="fa fa-instagram" aria-hidden="true"/>
+                                        <a href="https://www.instagram.com/orkunozgiray/?hl=en" target="_blank">orkunozgiray</a>
+                                    </ListItemContent>
+                                </ListItem>
+
+                                <ListItem>
+                                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                                        <i className="fa fa-facebook" aria-hidden="true"/>
+                                        <a href="https://www.facebook.com/orkun.ozgiray" target="_blank">orkunozgiray</a>
+                                    </ListItemContent>
+                                </ListItem>
+
+                                <ListItem>
+                                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                                        <i className="fa fa-linkedin-square" aria-hidden="true"/>
+                                        <a href="https://www.linkedin.com/in/orkunozgiray" target="_blank">orkunozgiray</a>
+                                    </ListItemContent>
+                                </ListItem>
+
+                                <ListItem>
+                                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                                        <i className="fa fa-github-square" aria-hidden="true"/>
+                                        <a href="https://github.com/orkunozgiray" target="_blank">orkunozgiray</a>
                                     </ListItemContent>
                                 </ListItem>
                             </List>
