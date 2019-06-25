@@ -9,12 +9,12 @@ class Resume extends Component {
         return(
             <div>
                 <Grid>
-                    <Cell col={4}>
+                    <Cell  className="resume-left-col" col={4}>
                         <div style={{textAlign: 'center'}}>
                             <img
-                            src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
+                            src="https://avatars0.githubusercontent.com/u/36546670?s=460&v=4"
                             alt="avatar"
-                            style={{height: '200px'}}
+                            style={{height: '400px', width: '400px'}}
                             />
                         </div>
 

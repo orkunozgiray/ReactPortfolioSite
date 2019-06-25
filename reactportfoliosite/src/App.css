@@ -17,9 +17,19 @@
   height: 100%;
 }
 
+/* Project Page CSS */
 .projects-grid {
   display: flex;
 }
+
+.java-tab {
+  background: linear-gradient(to right, rgb(24, 77, 94), rgb(68, 166, 187));
+}
+
+.category-tabs {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Project Page CSS */
 
 /* Resume Page CSS */
 
@@ -27,6 +37,11 @@
   background: #27221F;
   color: white;
   padding: 2em;
+}
+
+.resume-left-col img {
+  border-radius: 0 50% 50% 50%;
+
 }
 
 /* Resume Page CSS */
@@ -122,3 +137,11 @@
   font-size: 5em;
   padding: 8px;
 }
+
+/* Aboutme Page CSS */
+
+.aboutme-body {
+  background: linear-gradient(to right, rgb(24, 77, 94), rgb(68, 166, 187));
+}
+
+/* Aboutme Page CSS*/

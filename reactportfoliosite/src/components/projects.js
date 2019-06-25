@@ -1,5 +1,18 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import Particles from 'react-particles-js';
+
+const particleOpt = {
+    particles: {
+        number: {
+            value: 250,
+            density: {
+                enable: true,
+                value_area: 800
+            }
+        }
+    }
+}
 
 class Projects extends Component {
     constructor(props) {
@@ -61,13 +74,18 @@ class Projects extends Component {
                             <IconButton name="share" />
                         </CardMenu>
                     </Card>
+                    
                 </div>    
 
 
             )
         } else if(this.state.activeTab === 1) {
             return (
-                <div><h1>This is Java</h1></div>
+                <div className="java-tab">
+                    <Particles
+                        params={particleOpt}
+                    /> 
+                </div>
             )
         } else if(this.state.activeTab === 2) {
             return (
