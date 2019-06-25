@@ -22,26 +22,23 @@ class Contact extends Component {
                         <div classNmae="contact-list">
                             <List>
                                 <ListItem>
-                                    <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton'}}>
+                                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
                                         <i className="fa fa-phone-square" aria-hidden="true"/>
-                                        (123) 456-7890
-                                        Bryan Cranston
+                                        +1(705) 970 15-99
                                     </ListItemContent>
                                 </ListItem>
 
                                 <ListItem>
-                                    <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton'}}>
-                                        <i className="fa fa-phone-square" aria-hidden="true"/>
-                                        (102) 738-6745
-                                        Amanda Peiling
+                                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                                        <i className="fa fa-envelope" aria-hidden="true"/>
+                                        orkunozgiray@gmail.com
                                     </ListItemContent>
                                 </ListItem>
                                 
                                 <ListItem>
-                                    <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton'}}>
-                                        <i className="fa fa-phone-square" aria-hidden="true"/>
-                                        (102) 738-6745
-                                        Amanda Peiling
+                                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                                        <i className="fa fa-skype" aria-hidden="true"/>
+                                        <a href="https://join.skype.com/invite/zI9Gc1gceOUh" target="_blank">jakdanyel100</a>
                                     </ListItemContent>
                                 </ListItem>
                             </List>
