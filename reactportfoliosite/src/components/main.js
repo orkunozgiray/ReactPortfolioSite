@@ -6,6 +6,7 @@ import AboutMe from './aboutme';
 import ContactMe from './contactme';
 import Projects from './projects';
 import Resume from './resume';
+import About2 from './aboutme2';
 
 const Main = () => (
     <Switch>
@@ -14,6 +15,7 @@ const Main = () => (
         <Route path="/contactme" component={ContactMe} />
         <Route path="/projects" component={Projects} />
         <Route path="/resume" component={Resume} />
+        <Route path="/aboutme2" component={About2} />
     </Switch>
 )
 

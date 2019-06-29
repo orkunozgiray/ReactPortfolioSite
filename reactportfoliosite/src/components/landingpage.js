@@ -6,17 +6,13 @@ class Landing extends Component {
         return(
             <div style={{width: '100%', margin: 'auto'}}>
                 <Grid className="landing-grid">
-                    <Cell col={12}>
-                        <img 
-                        src="https://image.flaticon.com/icons/svg/877/877927.svg" 
-                        alt="avatar"
-                        className="avatar-img"
-                        />
-
+                    <Cell col={12}>                        
                         <div className="banner-text">
-                            <h1>Full Stack Web Developer</h1>
+                            <div className="text-div">
+                                <h1 data-text="Effect">Web & Software Developer</h1>
+                            </div>
                             <hr/>
-                            <p>HTML/CSS | Bootsrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</p>
+                            <p>HTML/CSS | JavaScript | React | React Native | NodeJS | Java | C# | Swift | ASP.Net</p>
 
                             <div className="social-links">
                             
@@ -39,7 +35,6 @@ class Landing extends Component {
                                 <a href="https://www.freecodecamp.org/fcce6be7b14-9660-485c-8f59-02611ce7c964" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-free-code-camp"  aria-hidden="true" />
                                 </a>
-
                             </div>
                         </div>
                     </Cell>

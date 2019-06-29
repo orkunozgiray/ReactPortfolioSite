@@ -1,14 +1,15 @@
+/*App.js*/
 .header-color {
   background: #F1F2B5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #135058, #F1F2B5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #135058, #F1F2B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: -webkit-linear-gradient(to top, #adb9bb, rgb(168, 170, 41));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #d64444, rgb(176, 197, 204)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+/*App.js*/
 
+/*Landing Page*/
 .landing-grid {
-  background: #F1F2B5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #135058, #F1F2B5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #135058, #F1F2B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url(https://i0.wp.com/www.marktechpost.com/wp-content/uploads/2019/03/artificial-intelligence-3685928_1920.png?fit=1920%2C1280&ssl=1);
+  background-size: cover;  
   text-align: center;
   position: fixed;
   top: 0;
@@ -16,6 +17,93 @@
   width: 100%;
   height: 100%;
 }
+.avatar-img {
+  height: 250px;
+  padding-top: 4em;
+  
+}
+.banner-text {
+  background-color: black;
+  opacity: .5;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+.banner-text h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+.banner-text p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 1em;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  padding-top: 200px;
+}
+.social-links i {
+  color: rgb(88, 0, 26);
+  font-size: 5em;
+  padding: 8px;
+}
+
+/*CSS Text Effect*/
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.text-div {
+  position: relative;
+  display: inline-block;
+  padding: 0 40px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+  font-weight: 900;
+  position: relative;
+  color: #34495e;
+}
+h1::before{
+  content: attr(data-text);
+  position: absolute;
+  color: #fff;
+  width: 0;
+  overflow: hidden;
+  transition: 0.6s;
+}
+.text-div::before{
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background: #3f29b9;
+  border-radius: 10px;
+  right: 0;
+  top: 0;
+  transition: 0.6s;
+}
+.text-div:hover .text::before,
+.text-div:hover::before{
+  width: 100%;
+}
+/*CSS Text Effect*/
+/*Landing Page*/
 
 /*Social Links Hover*/
 .social-links{
@@ -28,8 +116,8 @@
   display: inline-flex;
   width: 40px;
   height: 40px;
-  background: #2c3e50;
-  color: white;
+  background: #ffffff;
+  color: rgb(255, 255, 255);
   margin: 0 6px;
   border-radius: 50%;
   justify-content: center;
@@ -38,7 +126,7 @@
   font-size: 12px;
 }
 .social-links a:hover{
-  background: #e67e22;
+  background: #007c11;
 }
 .social-links a i{
   transition: 0.7s all;
@@ -52,12 +140,37 @@
 /* Project Page CSS */
 .projects-grid {
   display: flex;
+  background-image: url(https://blog.algolia.com/wp-content/uploads/2015/11/React_illo_final_720x400.png);
+  image: cover;
 }
-
+.c-tab {
+  display: flex;
+  background-image: url(https://sdtimes.com/wp-content/uploads/2017/03/source-code-583537_960_720-1.jpg); 
+}
 .java-tab {
-  background: linear-gradient(to right, rgb(24, 77, 94), rgb(68, 166, 187));
+  display: flex;
+  background-image: url(https://cdn.lynda.com/course/377484/377484-636807313660331603-16x9.jpg);
 }
-
+.swift-tab {
+  display: flex;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/01/XcodeTNW-1200x609.jpg);
+}
+.asp-tab {
+  display: flex;
+  background-image: url(http://www.wattabyte.com/wp-content/uploads/2017/08/ASP.NET-Application-Development.png);
+}
+.android-tab {
+  display: flex;
+  background-image: url(https://cdn.wccftech.com/wp-content/uploads/2018/04/android-coppa--2060x1030.jpg);
+}
+.unity-tab {
+  display: flex;
+  background-image: url(https://unity3d.com/profiles/unity3d/themes/unity/images/assets/backgrounds/unity-products-og.jpg);
+}
+.arduino-tab {
+  display: flex;
+  background-image: url(https://cdn.sparkfun.com/assets/9/1/e/4/8/515b4656ce395f8a38000000.png);
+}
 .category-tabs {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -69,11 +182,52 @@
   color: white;
   padding: 2em;
 }
-
 .resume-left-col img {
   border-radius: 0 50% 50% 50%;
-
 }
+/*Hovered Button*/
+.btn a {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #e71f1f;
+}
+.btn , .btn a{
+  border: 2px snow #3498db;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+.btn1 {
+  color: #db3434;
+}
+
+.btn1:hover, .btn a:hover {
+  color: #fff;
+}
+
+.btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  transition: 0.8s;
+}
+.btn1::before, .btn a:before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.btn1:hover::before {
+  height: 180%;
+}
+/*Hovered Button*/
 /* Resume Page CSS */
 
 /* Contact Page CSS */
@@ -86,7 +240,6 @@
   justify-content: center;
   padding-top: 2em;
 }
-
 .contact-grid {
   text-align: center;
   justify-content: center;
@@ -97,75 +250,25 @@
   border: 2px solid red;
   margin-bottom: 20px;
 }
-
 .contact-grid h2 {
   font-family: 'Anton, sans-serif';
   font-weight: bold;
 }
-
 .contact-grid p {
   font-family: 'Oxygen', sans-serif;
   font-weight: bold;
 }
-
 .contact-grid hr {
   border-top: 5px dotted black;
   width: 70%;
   margin: auto;
 }
-
 .contact-list i {
   font-size: 20px;
   padding-right: 5rem;
   padding-bottom: auto;
 }
 /* Contact Page CSS */
-
-.avatar-img {
-  height: 250px;
-  padding-top: 4em;
-  
-}
-
-.banner-text {
-  background-color: black;
-  opacity: .5;
-  width: 75%;
-  margin: auto;
-  border-radius: 10px;
-}
-
-.banner-text h1 {
-  font-size: 70px;
-  font-weight: bold;
-  color: white;
-}
-
-.banner-text hr {
-  border-top: 5px dotted white;
-  width: 50%;
-  margin: auto;
-
-}
-
-.banner-text p {
-  color: white;
-  font-size: 20px;
-  padding: 1em;
-}
-
-.social-links {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin: auto;
-}
-
-.social-links i {
-  color: white;
-  font-size: 5em;
-  padding: 8px;
-}
 
 /* Aboutme Page CSS */
 .aboutme-body {
@@ -174,8 +277,7 @@
   font-family: sans-serif;
   background: linear-gradient(to right, rgb(24, 77, 94), rgb(68, 166, 187));
 }
-
-.container{
+.container {
   text-align: center;
   position: absolute;
   top: 30%;
@@ -196,12 +298,11 @@
   position: relative;
   animation: text 3s 1;
 }
-.text2{
+.text2 {
   font-size: 80px;
   color: #ff5538;
   font-weight: 700;
 }
-
 @keyframes text {
   0%{
     color: black;
@@ -217,3 +318,118 @@
   }
 }
 /* Aboutme Page CSS*/
+
+
+/*Bubble CSS*/
+.bubbels{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+  background: #9b59b6;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.bubble{
+  position: absolute;
+  bottom: -100px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: flying 10s infinite ease-in;
+}
+.bubble:nth-child(1){
+  width: 40px;
+  height: 40px;
+  left: 10%;
+  animation-duration: 8s;
+}
+.bubble:nth-child(2){
+  width: 20px;
+  height: 20px;
+  left: 20%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(3){
+  width: 50px;
+  height: 50px;
+  left: 35%;
+  animation-duration: 10s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(4){
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  animation-duration: 7s;
+  animation-delay: 0s;
+}
+
+.bubble:nth-child(5){
+  width: 35px;
+  height: 35px;
+  left: 55%;
+  animation-duration: 6s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(6){
+  width: 45px;
+  height: 45px;
+  left: 65%;
+  animation-duration: 8s;
+  animation-delay: 3s;
+}
+.bubble:nth-child(7){
+  width: 25px;
+  height: 25px;
+  left: 75%;
+  animation-duration: 7s;
+  animation-delay: 2s;
+}
+.bubble:nth-child(8){
+  width: 80px;
+  height: 80px;
+  left: 80%;
+  animation-duration: 6s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(9){
+  width: 15px;
+  height: 15px;
+  left: 70%;
+  animation-duration: 9s;
+  animation-delay: 0s;
+}
+
+.bubble:nth-child(10){
+  width: 50px;
+  height: 50px;
+  left: 85%;
+  animation-duration: 5s;
+  animation-delay: 3s;
+}
+
+@keyframes flying {
+  0%{
+    bottom: -100px;
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(100px);
+  }
+  100%{
+    bottom: 1080px;
+    transform: translateX(-200px);
+  }
+}
+/*Bubble CSS*/
+

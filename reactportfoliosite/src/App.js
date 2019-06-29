@@ -9,21 +9,23 @@ class App extends Component {
     return (
       <div className="demo-big-content">
     <Layout>
-        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} 
+        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white', fontFamily: 'Lobster, monospace', fontSize: '40px', fontWeight: 'bold'}} 
         to="/">Orkun Ozgiray</Link>} scroll>
-            <Navigation>
-                <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About Me</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contactme">Contact Me</Link>
+            <Navigation style={{fontFamily: 'Lobster, monospace'}}>
+                <Link style={{textDecoration: 'none', color: 'white', fontSize: '18px'}} to="/resume">Resume</Link>
+                <Link style={{textDecoration: 'none', color: 'white', fontSize: '18px'}} to="/aboutme">About Me</Link>
+                <Link style={{textDecoration: 'none', color: 'white', fontSize: '18px'}} to="/projects">Projects</Link>
+                <Link style={{textDecoration: 'none', color: 'white', fontSize: '18px'}} to="/contactme">Contact Me</Link>
+                <Link style={{textDecoration: 'none', color: 'white', fontSize: '18px'}} to="/aboutme2">About Me2</Link>
             </Navigation>
         </Header>
-        <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Orkun Ozgiray</Link>}>
-            <Navigation>
-                <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About Me</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contactme">Contact Me</Link>
+        <Drawer className="drawer-style" title={<Link style={{textDecoration: 'none', color: 'black', fontFamily: 'Lobster, monospace', fontSize: '40px', fontWeight: 'bolder'}} to="/">Orkun Ozgiray</Link>}>
+            <Navigation style={{fontFamily: 'Lobster, monospace'}}>
+                <Link style={{textDecoration: 'none', color: 'black', fontSize: '16px'}} to="/resume">$ Resume</Link>
+                <Link style={{textDecoration: 'none', color: 'black', fontSize: '16px'}} to="/aboutme">$ About Me</Link>
+                <Link style={{textDecoration: 'none', color: 'black', fontSize: '16px'}} to="/projects">$ Projects</Link>
+                <Link style={{textDecoration: 'none', color: 'black', fontSize: '16px'}} to="/contactme">$ Contact Me</Link>
+                <Link style={{textDecoration: 'none', color: 'black', fontSize: '16px'}} to="/aboutme2">$ About Me2</Link>
             </Navigation>
         </Drawer>
         <Content>
