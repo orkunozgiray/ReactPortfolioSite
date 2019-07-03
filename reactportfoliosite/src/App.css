@@ -1,8 +1,20 @@
 /*App.js*/
-.header-color {
+nav {
+  width: 120%;
+  margin: 0;
+  top: 0;
   background: #F1F2B5;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #adb9bb, rgb(168, 170, 41));  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #d64444, rgb(176, 197, 204)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to top, #1a1c3f, rgb(64, 99, 110)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+nav:hover {
+  background: #9c3d3d;
+  color: #292727;
+  overflow: hidden;
+  transition: 1s;
+}
+.fixed-nav {
+  position: fixed;
 }
 /*App.js*/
 
@@ -138,10 +150,12 @@ h1::before{
 
 
 /* Project Page CSS */
+.main-page {
+  background-image: url(https://cdn.pixabay.com/photo/2016/09/05/18/54/texture-1647380__340.jpg);
+}
 .projects-grid {
   display: flex;
   background-image: url(https://blog.algolia.com/wp-content/uploads/2015/11/React_illo_final_720x400.png);
-  image: cover;
 }
 .c-tab {
   display: flex;
@@ -188,7 +202,7 @@ h1::before{
 /*Hovered Button*/
 .btn a {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: #e71f1f;
+  color: #ffffff;
 }
 .btn , .btn a{
   border: 2px snow #3498db;
@@ -203,11 +217,11 @@ h1::before{
   overflow: hidden;
 }
 .btn1 {
-  color: #db3434;
+  color: #ffffff;
 }
 
 .btn1:hover, .btn a:hover {
-  color: #fff;
+  color: rgb(7, 91, 160);
 }
 
 .btn::before{
@@ -228,69 +242,99 @@ h1::before{
   height: 180%;
 }
 /*Hovered Button*/
+/*Scroll to Top Button*/
+.demo-big-content{
+  scroll-behavior: smooth;
+}
+body{
+
+  margin: 0;
+  padding: 0;
+}
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #2746ae;
+  bottom: 40px;
+  right: 50px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
+/*Scroll to Top Button*/
 /* Resume Page CSS */
 
 /* Contact Page CSS */
-.contact-body {
-  margin: auto;
-  background: grey;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  padding-top: 2em;
+.contact-image {
+  border-radius: 0 50% 50% 50%;
+}
+@media only screen and (max-width: 767px) {
+  .contact-body {
+    margin: auto;
+    background-image: url(https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&w=1000&q=80);
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-top: 2em;
+  }
 }
 .contact-grid {
   text-align: center;
   justify-content: center;
-  width: 80%;
-  height: 100%;
-  background: white;
+  width: 75%;
+  height: 77%;
+  background-image: url(https://cdn.wallpapersafari.com/96/44/B3Zaho.jpg);
+  background-size: cover;
   color: black;
-  border: 2px solid red;
+  border: 2px solid rgb(15, 14, 1);
   margin-bottom: 20px;
+  border-radius: 1%;
 }
 .contact-grid h2 {
   font-family: 'Anton, sans-serif';
   font-weight: bold;
 }
-.contact-grid p {
-  font-family: 'Oxygen', sans-serif;
-  font-weight: bold;
-}
-.contact-grid hr {
-  border-top: 5px dotted black;
-  width: 70%;
-  margin: auto;
-}
 .contact-list i {
-  font-size: 20px;
-  padding-right: 5rem;
+  font-size: 30px;
+  padding-right: 4rem;
   padding-bottom: auto;
 }
 /* Contact Page CSS */
 
 /* Aboutme Page CSS */
+/*text effect*/
 .aboutme-body {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  background: linear-gradient(to right, rgb(24, 77, 94), rgb(68, 166, 187));
-}
+  background: linear-gradient(to right, rgb(73, 84, 110), rgb(43, 84, 107));
+} 
 .container {
   text-align: center;
   position: absolute;
-  top: 30%;
+  top: 54%;
   left: 50%;
   transform: translate(-50%,-50%);
   width: 100%;
+  text-shadow: 0px 7px 0px rgb(114, 114, 112), 0 0 1em rgb(111, 119, 117), 0 0 0.2em rgb(106, 107, 106);
 }
 .container p {
   text-transform: uppercase;
   display: block;
 }
+.container ul {
+  font-size: 18px;
+  display: block;
+  text-shadow: 0px 0px 1px rgb(224, 223, 216), 0 0 1em rgb(136, 245, 218), 0 0 0.2em rgb(226, 236, 223);
+}
 .text1{
-  color: white;
+  color: rgb(77, 122, 245);
   font-size: 140px;
   font-weight: 700;
   letter-spacing: 8px;
@@ -300,12 +344,13 @@ h1::before{
 }
 .text2 {
   font-size: 80px;
-  color: #ff5538;
+  color: #fdfffb;
   font-weight: 700;
+  animation: text 5s 1;
 }
 @keyframes text {
   0%{
-    color: black;
+    color: rgb(73, 31, 31);
     margin-bottom: -40px;
   }
   30%{
@@ -317,119 +362,62 @@ h1::before{
     margin-bottom: -40px;
   }
 }
+/*text effect*/
+.grid-aboutme{
+  padding-top: 50px;
+}
+.aboutme-left-col h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000000;
+}
+.aboutme-left-col p{
+  text-transform: unset;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.aboutme-right-col h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000000;
+}
+.aboutme-right-col p{
+  text-transform: unset;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
 /* Aboutme Page CSS*/
 
-
-/*Bubble CSS*/
-.bubbels{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  
-  background: #9b59b6;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  overflow: hidden;
-  top: 0;
-  left: 0;
+/*footer*/
+.footer-landingpage{
+  color: #27221F;
+  padding-top: 560px;
+  padding-right: 10px;
+  text-align: right;
+  font-weight: bold;
 }
-.bubble{
-  position: absolute;
-  bottom: -100px;
-  background: #f1f1f1;
-  border-radius: 50%;
-  opacity: 0.5;
-  animation: flying 10s infinite ease-in;
+.footer-resume{
+  color: #27221F;
+  text-align: center;
+  font-weight: bold;
 }
-.bubble:nth-child(1){
-  width: 40px;
-  height: 40px;
-  left: 10%;
-  animation-duration: 8s;
+.footer-aboutme{
+  color: #27221F;
+  text-align: center;
+  font-weight: bold;
 }
-.bubble:nth-child(2){
-  width: 20px;
-  height: 20px;
-  left: 20%;
-  animation-duration: 5s;
-  animation-delay: 1s;
+.footer-projects{
+  color: #27221F;
+  padding-top: 180px;
+  text-align: center;
+  font-weight: bold;
 }
-.bubble:nth-child(3){
-  width: 50px;
-  height: 50px;
-  left: 35%;
-  animation-duration: 10s;
-  animation-delay: 2s;
+.footer-contactme{
+  color: #27221F;
+  text-align: right;
+  padding-right: 152px;
+  font-weight: bold;
 }
-
-.bubble:nth-child(4){
-  width: 80px;
-  height: 80px;
-  left: 50%;
-  animation-duration: 7s;
-  animation-delay: 0s;
-}
-
-.bubble:nth-child(5){
-  width: 35px;
-  height: 35px;
-  left: 55%;
-  animation-duration: 6s;
-  animation-delay: 1s;
-}
-.bubble:nth-child(6){
-  width: 45px;
-  height: 45px;
-  left: 65%;
-  animation-duration: 8s;
-  animation-delay: 3s;
-}
-.bubble:nth-child(7){
-  width: 25px;
-  height: 25px;
-  left: 75%;
-  animation-duration: 7s;
-  animation-delay: 2s;
-}
-.bubble:nth-child(8){
-  width: 80px;
-  height: 80px;
-  left: 80%;
-  animation-duration: 6s;
-  animation-delay: 1s;
-}
-
-.bubble:nth-child(9){
-  width: 15px;
-  height: 15px;
-  left: 70%;
-  animation-duration: 9s;
-  animation-delay: 0s;
-}
-
-.bubble:nth-child(10){
-  width: 50px;
-  height: 50px;
-  left: 85%;
-  animation-duration: 5s;
-  animation-delay: 3s;
-}
-
-@keyframes flying {
-  0%{
-    bottom: -100px;
-    transform: translateX(0);
-  }
-  50%{
-    transform: translateX(100px);
-  }
-  100%{
-    bottom: 1080px;
-    transform: translateX(-200px);
-  }
-}
-/*Bubble CSS*/
-
+/*footer*/

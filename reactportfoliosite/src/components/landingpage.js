@@ -12,7 +12,7 @@ class Landing extends Component {
                                 <h1 data-text="Effect">Web & Software Developer</h1>
                             </div>
                             <hr/>
-                            <p>HTML/CSS | JavaScript | React | React Native | NodeJS | Java | C# | Swift | ASP.Net</p>
+                            <p style={{textShadow: '1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue'}}>HTML/CSS/JavaScript | ReactJS | React Native | NodeJS | Java | C# | Swift | ASP.Net</p>
 
                             <div className="social-links">
                             
@@ -39,6 +39,9 @@ class Landing extends Component {
                         </div>
                     </Cell>
                 </Grid>
+                <footer className="footer-landingpage">
+                    ©Copyright 2019.All Rights are Reserved
+                </footer>
             </div>
         )
     }

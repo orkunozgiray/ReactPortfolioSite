@@ -33,14 +33,14 @@ class App extends React.Component {
       return (
         <div className="demo-big-content">
             <Layout>
-                <Header className={this.state.scroll > this.state.top ? "fixed-nav" : ""} title={<Link style={{textDecoration: 'none', color: 'white', fontFamily: 'Lobster, monospace', fontSize: '30px', fontWeight: 'bold'}} to="/">Orkun Ozgiray</Link>}>
-                    <Navigation style={{fontFamily: 'Lobster, monospace'}} >
-                        <Link style={{textDecoration: 'none', color: 'white', fontSize: '18px', textShadow: "2px 2px 4px #000000"}} to="/resume">Resume</Link>
-                        <Link style={{textDecoration: 'none', color: 'white', fontSize: '18px', textShadow: "2px 2px 4px #000000"}} to="/aboutme">About Me</Link>
-                        <Link style={{textDecoration: 'none', color: 'white', fontSize: '18px', textShadow: "2px 2px 4px #000000"}} to="/projects">Projects</Link>
-                        <Link style={{textDecoration: 'none', color: 'white', fontSize: '18px', textShadow: "2px 2px 4px #000000"}} to="/contactme">Contact Me</Link>
-                    </Navigation>
-                </Header>
+                <nav className={this.state.scroll > this.state.top ? "fixed-nav" : ""}>
+                    <ul style={{fontFamily: 'Lobster, monospace'}}>
+                        <li style={{textDecoration: 'none', color: 'white', fontSize: '18px', textShadow: "2px 2px 4px #000000"}} to="/resume">Resume</li>
+                        <li style={{textDecoration: 'none', color: 'white', fontSize: '18px', textShadow: "2px 2px 4px #000000"}} to="/aboutme">About Me</li>
+                        <li style={{textDecoration: 'none', color: 'white', fontSize: '18px', textShadow: "2px 2px 4px #000000"}} to="/projects">Projects</li>
+                        <li style={{textDecoration: 'none', color: 'white', fontSize: '18px', textShadow: "2px 2px 4px #000000"}} to="/contactme">Contact Me</li>
+                    </ul>
+                </nav>
                 <Drawer className="drawer-style" title={<Link style={{textDecoration: 'none', color: 'black', fontFamily: 'Lobster, monospace', fontSize: '40px', fontWeight: 'bolder'}} to="/">Orkun Ozgiray</Link>}>
                     <Navigation style={{fontFamily: 'Lobster, monospace'}}>
                         <Link style={{textDecoration: 'none', color: 'black', fontSize: '16px'}} to="/resume">$ Resume</Link>

@@ -14,13 +14,13 @@ class Projects extends Component {
                     {/* Project 1 */}
                     <Card shadow={5} style={{minWidth: "450", margin: "auto"}}>
                         <CardTitle style={{color: 'white', height: '176px', background:
-                        'url(https://raddevon.com/wp-content/uploads/2018/10/react.jpg) center / cover'}} ></CardTitle>
+                        'url(https://raddevon.com/wp-content/uploads/2018/10/react.jpg) center / cover'}}></CardTitle>
                         <CardText>
-                            Lorem IpmsSLHDFKAJKD HDJa shdsjbak hsvahs bjsdsdn aksaksj asgasavs kgfeunvldhs vhdvdsnsk
+                            My personal web page which I created by using "ReactJS".
                         </CardText>
                         <CardActions border>
                             <Button colored>
-                                <a href="https://github.com/orkunozgiray/ReactPortfolioSite" target="_blank">ReactPortfolioSite</a>
+                                <a href="https://github.com/orkunozgiray/ReactPortfolioSite" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none'}} target="_blank">ReactPortfolioSite</a>
                             </Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
@@ -33,17 +33,17 @@ class Projects extends Component {
             )
         } else if(this.state.activeTab === 1) {
             return (
-                <div className="java-tab">
+                <div className="arduino-tab">
                     {/* Project 1 */}
                     <Card shadow={5} style={{minWidth: "450", margin: "auto"}}>
                         <CardTitle style={{color: 'white', height: '176px', background:
-                        'url(https://logoeps.com/wp-content/uploads/2011/06/java-logo-vector.png) center / cover'}} ></CardTitle>
+                        'url(https://claudiozito.com/wp-content/uploads/2014/08/arduino400.jpg) center / cover'}} ></CardTitle>
                         <CardText>
-                            Lorem IpmsSLHDFKAJKD HDJa shdsjbak hsvahs bjsdsdn aksaksj asgasavs kgfeunvldhs vhdvdsnsk
+                            Arduino Obstacle Avoiding Car which I created for the 1st Semester Project.
                         </CardText>
                         <CardActions border>
                             <Button colored>
-                                <a href="https://github.com/orkunozgiray/ReactPortfolioSite" target="_blank">ReactPortfolioSite</a>
+                                <a href="https://github.com/orkunozgiray/ObstacleAvoidingCar" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none'}} target="_blank">Obstacle Avoiding Car</a>
                             </Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
@@ -60,10 +60,12 @@ class Projects extends Component {
                         <CardTitle style={{color: 'white', height: '176px', background:
                         'url(https://ih0.redbubble.net/image.416412087.0587/poster,840x830,f8f8f8-pad,750x1000,f8f8f8.jpg) center / cover'}} ></CardTitle>
                         <CardText>
-                            Lorem IpmsSLHDFKAJKD HDJa shdsjbak hsvahs bjsdsdn aksaksj asgasavs kgfeunvldhs vhdvdsnsk
+                            C# Calculator.
                         </CardText>
                         <CardActions border>
-                            <Button colored>Github1</Button>
+                            <Button colored>
+                                <a href="https://github.com/orkunozgiray/CSharp-Calculator" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none'}} target="_blank">C# Calculator</a>
+                            </Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share" />
@@ -79,11 +81,11 @@ class Projects extends Component {
                         <CardTitle style={{color: 'white', height: '176px', background:
                         'url(https://developer.apple.com/swift/images/swift-og.png) center / cover'}} ></CardTitle>
                         <CardText>
-                            Lorem IpmsSLHDFKAJKD HDJa shdsjbak hsvahs bjsdsdn aksaksj asgasavs kgfeunvldhs vhdvdsnsk
+                            TicTacToe Game I created by using "XCode" based on Swift Programming.
                         </CardText>
                         <CardActions border>
                             <Button colored>
-                                <a href="https://github.com/orkunozgiray/AndroidCalculator" target="_blank">TicTacToe App</a>
+                                <a href="https://github.com/orkunozgiray/TicTacToe" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none'}} target="_blank">TicTacToe App</a>
                             </Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
@@ -100,11 +102,11 @@ class Projects extends Component {
                         <CardTitle style={{color: 'white', height: '176px', background:
                         'url(https://cdn4.iconfinder.com/data/icons/logos-3/504/ASP.Net-512.png) center / cover'}} ></CardTitle>
                         <CardText>
-                            Lorem IpmsSLHDFKAJKD HDJa shdsjbak hsvahs bjsdsdn aksaksj asgasavs kgfeunvldhs vhdvdsnsk
+                            ASP.Net 3rd Semester Project.
                         </CardText>
                         <CardActions border>
                             <Button colored>
-                                <a href="https://github.com/orkunozgiray/AndroidCalculator" target="_blank">TicTacToe App</a>
+                                <a href="https://github.com/orkunozgiray/SoccerBench" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none'}} target="_blank">SoccerBench</a>
                             </Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
@@ -125,7 +127,7 @@ class Projects extends Component {
                         </CardText>
                         <CardActions border>
                             <Button colored>
-                                <a href="https://github.com/orkunozgiray/AndroidCalculator" target="_blank">Android Calculator</a>
+                                <a href="https://github.com/orkunozgiray/AndroidCalculator" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none'}} target="_blank">Android Calculator</a>
                             </Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
@@ -142,11 +144,11 @@ class Projects extends Component {
                         <CardTitle style={{color: 'white', height: '176px', background:
                         'url(https://unity3d.com/files/images/ogimg.jpg?1) center / cover'}} >React Project #1</CardTitle>
                         <CardText>
-                            Lorem IpmsSLHDFKAJKD HDJa shdsjbak hsvahs bjsdsdn aksaksj asgasavs kgfeunvldhs vhdvdsnsk
+                            3D Ball Game which I created with Unity3D based on C# Script.
                         </CardText>
                         <CardActions border>
                             <Button colored>
-                                <a href="https://github.com/orkunozgiray/3DBallGame" target="_blank">3D Ball Game</a>
+                                <a href="https://github.com/orkunozgiray/3DBallGame" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none'}} target="_blank">3D Ball Game</a>
                             </Button>
 
                         </CardActions>
@@ -156,49 +158,30 @@ class Projects extends Component {
                     </Card>
                 </div>
             )
-        } else if(this.state.activeTab === 7) {
-            return (
-                <div className="arduino-tab">
-                    {/* Project 1 */}
-                    <Card shadow={5} style={{minWidth: "450", margin: "auto"}}>
-                        <CardTitle style={{color: 'white', height: '176px', background:
-                        'url(https://claudiozito.com/wp-content/uploads/2014/08/arduino400.jpg) center / cover'}} ></CardTitle>
-                        <CardText>
-                            Lorem IpmsSLHDFKAJKD HDJa shdsjbak hsvahs bjsdsdn aksaksj asgasavs kgfeunvldhs vhdvdsnsk
-                        </CardText>
-                        <CardActions border>
-                            <Button colored>
-                                <a href="https://github.com/orkunozgiray/ObstacleAvoidingCar" target="_blank">Obstacle Avoiding Car</a>
-                            </Button>
-                        </CardActions>
-                        <CardMenu style={{color: '#fff'}}>
-                            <IconButton name="share" />
-                        </CardMenu>
-                    </Card>
-                </div>
-            )
-        }
+        } 
     }
 
     render() {
         return(
             <div className="category-tabs">
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab>React</Tab>
-                    <Tab>Java</Tab>
-                    <Tab>C#</Tab>
-                    <Tab>Swift</Tab>
-                    <Tab>ASP.Net</Tab>
-                    <Tab>Android</Tab>
-                    <Tab>Unity3D</Tab>
-                    <Tab>Arduino</Tab>
+                    <Tab style={{textShadow: '2px 2px 2px #747880'}}>React</Tab>
+                    <Tab style={{textShadow: '2px 2px 2px #747880'}}>Arduino</Tab>
+                    <Tab style={{textShadow: '2px 2px 2px #747880'}}>C#</Tab>
+                    <Tab style={{textShadow: '2px 2px 2px #747880'}}>Swift</Tab>
+                    <Tab style={{textShadow: '2px 2px 2px #747880'}}>ASP.Net</Tab>
+                    <Tab style={{textShadow: '2px 2px 2px #747880'}}>Android</Tab>
+                    <Tab style={{textShadow: '2px 2px 2px #747880'}}>Unity3D</Tab>
                 </Tabs>
 
-                    <Grid>
-                        <Cell col={12}>
-                            <div className="content">{this.toogleCategories()}</div>
-                        </Cell>
-                    </Grid>
+                <Grid>
+                    <Cell col={12}>
+                        <div className="content">{this.toogleCategories()}</div>
+                    </Cell>
+                </Grid>
+                <footer className="footer-projects">
+                    ©Copyright 2019.All Rights are Reserved
+                </footer>
             </div>
         )
     }

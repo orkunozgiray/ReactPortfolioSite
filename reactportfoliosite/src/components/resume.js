@@ -18,27 +18,27 @@ class Resume extends Component {
                             />
                         </div>
 
-                        <h2 style={{paddingTop: '2em'}}>Orkun Ozgiray</h2>
-                        <h4 style={{color: 'grey'}}>WEB & Software Developer</h4>
-                        <hr style={{borderTop: '3px solid #833fb2', width: '75%'}}/>
-                        <h5>Address</h5>
+                        <h2 style={{paddingTop: '2em', textShadow: '2px 5px 3px #000000'}}>Orkun Ozgiray</h2>
+                        <h4 style={{color: 'grey', textShadow: '0 0 3px #FF0000'}}>WEB & Software Developer</h4>
+                        <hr style={{borderTop: '3px solid #3c7de6x', width: '75%'}}/>
+                        <h5 style={{color: 'white', textShadow: '2px 2px 3px #000000'}}>Address</h5>
                         <p>242 Penetanguishene Road, Barrie ON L4M7C2</p>
                         <hr style={{borderTop: '3px solid #833fb2', width: '80%'}}/>
-                        <h5>Phone</h5>
+                        <h5 style={{color: 'white', textShadow: '2px 2px 3px #000000'}}>Phone</h5>
                         <p>+1(705) 970 15-99</p>
                         <hr style={{borderTop: '3px solid #833fb2', width: '35%'}}/>
-                        <h5>Email</h5>
+                        <h5 style={{color: 'white', textShadow: '2px 2px 3px #000000'}}>Email</h5>
                         <p>orkunozgiray@gmail.com</p>
                         <hr style={{borderTop: '3px solid #833fb2', width: '45%'}}/>
-                        <h5>Web</h5>
-                        <p>www.orkunozgiray.com</p>
+                        <h5 style={{color: 'white', textShadow: '2px 2px 3px #000000'}}>Web</h5>
+                        <a href="https://www.orkunozgiray.com" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none'}} target="_blank">www.orkunozgiray.com</a>
                         <hr style={{borderTop: '3px solid #833fb2', width: '40%'}}/>
                     </Cell>
                     <Cell className="resume-right-col" col={8}>
                         <h2>Education</h2>
                         <div className="button-hovered">
                             <button class="btn btn1"><i class="fa fa-download"></i>
-                                <a href="https://1drv.ms/b/s!AushuXjHwu-lw3xJlnN3GXQLQVFD" target="_blank">Download Resume</a>
+                                <a href="https://1drv.ms/b/s!AushuXjHwu-lw3xJlnN3GXQLQVFD" style={{ textDecoration: 'none'}} target="_blank">Download Resume</a>
                             </button>
                         </div>
 
@@ -49,7 +49,7 @@ class Resume extends Component {
                             country="Turkey"
                             schoolDescription="4 Year High School Science Degree"
                         />
-                        <hr style={{borderTop: '3px solid #e22947', width: '100%'}}/>
+                        <hr style={{borderTop: '3px solid #3c7de6', width: '100%'}}/>
                         
 
                         <Education
@@ -64,7 +64,7 @@ class Resume extends Component {
                             Control Engineering, Electromechanical Energy Conversation"
                         />
 
-                        <hr style={{borderTop: '3px solid #e22947'}}/>
+                        <hr style={{borderTop: '3px solid #3c7de6'}}/>
 
                         <Education
                             startYear={2018}
@@ -79,7 +79,7 @@ class Resume extends Component {
                             Development using Swift, Advanced Database"
                         />
 
-                        <hr style={{borderTop: '3px solid #e22947', width: '100%'}}/>
+                        <hr style={{borderTop: '3px solid #3c7de6', width: '100%'}}/>
 
                         <h2>Experience</h2>
 
@@ -91,7 +91,7 @@ class Resume extends Component {
                             jobDescription="Engineer Cadet Key Responsibilities: Observing production process of the
                             several cables for electronic devices and testing them."
                         />
-                        <hr style={{borderTop: '3px solid #e22947', width: '100%'}}/>
+                        <hr style={{borderTop: '3px solid #3c7de6', width: '100%'}}/>
 
                         <Experience
                             startYear={2015}
@@ -102,7 +102,7 @@ class Resume extends Component {
                             Voltage Stabilizer, Regulators, Transformators, Reactors and Accumulator Charging
                             Unit."
                         />
-                        <hr style={{borderTop: '3px solid #e22947', width: '100%'}}/>
+                        <hr style={{borderTop: '3px solid #3c7de6', width: '100%'}}/>
 
                         <Experience
                             startYear={2018}
@@ -114,7 +114,7 @@ class Resume extends Component {
                             applications. Took part of a creating an automated task sending program based on C#.
                             Created a website by using ASP.Net and HTML&Css&JavaScript skills."
                         />
-                        <hr style={{borderTop: '3px solid #e22947', width: '100%'}}/>
+                        <hr style={{borderTop: '3px solid #3c7de6', width: '100%'}}/>
 
                         <h2>Skills</h2>
 
@@ -159,7 +159,14 @@ class Resume extends Component {
                             progress={70}
                         />                  
                     </Cell>
+                    <section>
+
+                    </section>
+                    <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
                 </Grid>
+                <footer className="footer-resume">
+                    ©Copyright 2019.All Rights are Reserved
+                </footer>
             </div>
         )
     }
