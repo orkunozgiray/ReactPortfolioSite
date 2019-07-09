@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl'
 
+
 class Contact extends Component {
     render() {
         return(
@@ -12,7 +13,7 @@ class Contact extends Component {
                             className="contact-image" 
                             src="https://media.licdn.com/dms/image/C5603AQFs_jRdNgmSIQ/profile-displayphoto-shrink_200_200/0?e=1567641600&v=beta&t=eN0rp4yTvFGJUBi5j788tFeluSn7yYVhOFa5YdneCVo" 
                             alt="avatar" 
-                            style={{height: '250px'}} />
+                            style={{height: '250px', width: '50%', height: '50%', backgroundSize: 'cover'}} />
                         <p style={{fontSize: '28px', width: '75%', margin: 'auto', paddingTop: '1em', color: '#b0b9c2', fontWeight: 'bolder', textShadow: '2px 5px 3px #000000'}}>WEB & SOFTWARE DEVELOPER</p>
                     </Cell>
 

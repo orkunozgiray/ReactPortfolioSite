@@ -26,7 +26,7 @@ class Landing extends Component {
                                     <i className="fa fa-github-square"  aria-hidden="true" />
                                 </a>
 
-                                {/* Youtube */}
+                                {/* Instagram */}
                                 <a href="https://www.instagram.com/orkunozgiray/?hl=en" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-instagram"  aria-hidden="true" />
                                 </a>

@@ -15,12 +15,12 @@ class Projects extends Component {
                     <Card shadow={5} style={{minWidth: "450", margin: "auto"}}>
                         <CardTitle style={{color: 'white', height: '176px', background:
                         'url(https://raddevon.com/wp-content/uploads/2018/10/react.jpg) center / cover'}}></CardTitle>
-                        <CardText>
+                        <CardText  style={{textAlign: 'center'}}>
                             My personal web page which I created by using "ReactJS".
                         </CardText>
                         <CardActions border>
                             <Button colored>
-                                <a href="https://github.com/orkunozgiray/ReactPortfolioSite" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none'}} target="_blank">ReactPortfolioSite</a>
+                                <a href="https://github.com/orkunozgiray/ReactPortfolioSite" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none', padding: '0 55px'}} target="_blank">ReactPortfolioSite</a>
                             </Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
@@ -43,7 +43,7 @@ class Projects extends Component {
                         </CardText>
                         <CardActions border>
                             <Button colored>
-                                <a href="https://github.com/orkunozgiray/ObstacleAvoidingCar" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none'}} target="_blank">Obstacle Avoiding Car</a>
+                                <a href="https://github.com/orkunozgiray/ObstacleAvoidingCar" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none', padding: '0 47px'}} target="_blank">Obstacle Avoiding Car</a>
                             </Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
@@ -64,7 +64,7 @@ class Projects extends Component {
                         </CardText>
                         <CardActions border>
                             <Button colored>
-                                <a href="https://github.com/orkunozgiray/CSharp-Calculator" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none'}} target="_blank">C# Calculator</a>
+                                <a href="https://github.com/orkunozgiray/CSharp-Calculator" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none', padding: '0 75px'}} target="_blank">C# Calculator</a>
                             </Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
@@ -85,7 +85,7 @@ class Projects extends Component {
                         </CardText>
                         <CardActions border>
                             <Button colored>
-                                <a href="https://github.com/orkunozgiray/TicTacToe" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none'}} target="_blank">TicTacToe App</a>
+                                <a href="https://github.com/orkunozgiray/TicTacToe" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none', padding: '0 80px'}} target="_blank">TicTacToe App</a>
                             </Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
@@ -106,7 +106,7 @@ class Projects extends Component {
                         </CardText>
                         <CardActions border>
                             <Button colored>
-                                <a href="https://github.com/orkunozgiray/SoccerBench" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none'}} target="_blank">SoccerBench</a>
+                                <a href="https://github.com/orkunozgiray/SoccerBench" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none', padding: '0 80px'}} target="_blank">SoccerBench</a>
                             </Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
@@ -127,7 +127,7 @@ class Projects extends Component {
                         </CardText>
                         <CardActions border>
                             <Button colored>
-                                <a href="https://github.com/orkunozgiray/AndroidCalculator" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none'}} target="_blank">Android Calculator</a>
+                                <a href="https://github.com/orkunozgiray/AndroidCalculator" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none', padding: '0 55px'}} target="_blank">Android Calculator</a>
                             </Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
@@ -148,7 +148,7 @@ class Projects extends Component {
                         </CardText>
                         <CardActions border>
                             <Button colored>
-                                <a href="https://github.com/orkunozgiray/3DBallGame" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none'}} target="_blank">3D Ball Game</a>
+                                <a href="https://github.com/orkunozgiray/3DBallGame" style={{fontWeight: 'bold', color: 'black', textDecoration: 'none', padding: '0 75px'}} target="_blank">3D Ball Game</a>
                             </Button>
 
                         </CardActions>

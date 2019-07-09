@@ -7,6 +7,10 @@ nav {
   background: -webkit-linear-gradient(to top, #adb9bb, rgb(168, 170, 41));  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #1a1c3f, rgb(64, 99, 110)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+nav:active {
+  color: rgb(11, 7, 27);
+  background: #539c3d;
+}
 nav:hover {
   background: #9c3d3d;
   color: #292727;
@@ -19,8 +23,10 @@ nav:hover {
 /*App.js*/
 
 /*Landing Page*/
+/* For device width 400px and larger: */
 .landing-grid {
-  background-image: url(https://i0.wp.com/www.marktechpost.com/wp-content/uploads/2019/03/artificial-intelligence-3685928_1920.png?fit=1920%2C1280&ssl=1);
+  background-repeat: no-repeat;
+  background-image: url(images/background-landing.png);
   background-size: cover;  
   text-align: center;
   position: fixed;
@@ -28,6 +34,11 @@ nav:hover {
   left: 0;
   width: 100%;
   height: 100%;
+}
+@media only screen and (min-width: 400px) {
+  .landing-grid { 
+     background-image: url(images/background-landing.png); 
+  }
 }
 .avatar-img {
   height: 250px;
@@ -150,40 +161,54 @@ h1::before{
 
 
 /* Project Page CSS */
-.main-page {
-  background-image: url(https://cdn.pixabay.com/photo/2016/09/05/18/54/texture-1647380__340.jpg);
-}
 .projects-grid {
   display: flex;
-  background-image: url(https://blog.algolia.com/wp-content/uploads/2015/11/React_illo_final_720x400.png);
+  background-image: url(images/background-react.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 .c-tab {
   display: flex;
-  background-image: url(https://sdtimes.com/wp-content/uploads/2017/03/source-code-583537_960_720-1.jpg); 
-}
-.java-tab {
-  display: flex;
-  background-image: url(https://cdn.lynda.com/course/377484/377484-636807313660331603-16x9.jpg);
+  background-image: url(images/background-c.jpg); 
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 .swift-tab {
   display: flex;
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/01/XcodeTNW-1200x609.jpg);
+  background-image: url(images/background-swift.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 .asp-tab {
   display: flex;
-  background-image: url(http://www.wattabyte.com/wp-content/uploads/2017/08/ASP.NET-Application-Development.png);
+  background-image: url(images/background-asp.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 .android-tab {
   display: flex;
-  background-image: url(https://cdn.wccftech.com/wp-content/uploads/2018/04/android-coppa--2060x1030.jpg);
+  background-image: url(images/background-android.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 .unity-tab {
   display: flex;
-  background-image: url(https://unity3d.com/profiles/unity3d/themes/unity/images/assets/backgrounds/unity-products-og.jpg);
+  background-image: url(images/background-unity.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 .arduino-tab {
   display: flex;
-  background-image: url(https://cdn.sparkfun.com/assets/9/1/e/4/8/515b4656ce395f8a38000000.png);
+  background-image: url(images/background-arduino.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 .category-tabs {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -272,29 +297,28 @@ body{
 .contact-image {
   border-radius: 0 50% 50% 50%;
 }
-@media only screen and (max-width: 767px) {
-  .contact-body {
-    margin: auto;
-    background-image: url(https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&w=1000&q=80);
-    background-size: cover;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    padding-top: 2em;
-  }
+.contact-body {
+  margin: auto;
+  background-image: url(images/brick-background.jpeg);
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
 }
 .contact-grid {
   text-align: center;
   justify-content: center;
   width: 75%;
   height: 77%;
-  background-image: url(https://cdn.wallpapersafari.com/96/44/B3Zaho.jpg);
+  background-image: url(images/background-contactme.jpg);
   background-size: cover;
   color: black;
   border: 2px solid rgb(15, 14, 1);
   margin-bottom: 20px;
   border-radius: 1%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 5px 2px rgba(0,0,0,0.24);
 }
 .contact-grid h2 {
   font-family: 'Anton, sans-serif';
@@ -313,7 +337,7 @@ body{
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  background: linear-gradient(to right, rgb(73, 84, 110), rgb(43, 84, 107));
+  background: linear-gradient(to right, rgb(83, 105, 155), rgb(88, 31, 180));
 } 
 .container {
   text-align: center;
@@ -334,7 +358,7 @@ body{
   text-shadow: 0px 0px 1px rgb(224, 223, 216), 0 0 1em rgb(136, 245, 218), 0 0 0.2em rgb(226, 236, 223);
 }
 .text1{
-  color: rgb(77, 122, 245);
+  color: rgb(174, 184, 151);
   font-size: 140px;
   font-weight: 700;
   letter-spacing: 8px;
@@ -344,7 +368,7 @@ body{
 }
 .text2 {
   font-size: 80px;
-  color: #fdfffb;
+  color: #c8d5ff;
   font-weight: 700;
   animation: text 5s 1;
 }

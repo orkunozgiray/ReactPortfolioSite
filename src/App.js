@@ -11,29 +11,29 @@ class App extends React.Component {
           this.state = {};
   
           this.handleScroll = this.handleScroll.bind(this);
-      }
+    }
   
-      handleScroll() {
-          this.setState({scroll: window.scrollY});
-      }
+    handleScroll() {
+        this.setState({scroll: window.scrollY});
+    }
     
     componentDidMount() {
           const el = document.querySelector('nav');
           this.setState({top: el.offsetTop, height: el.offsetHeight});
           window.addEventListener('scroll', this.handleScroll);
-      }
+    }
     
     componentDidUpdate() {
           this.state.scroll > this.state.top ? 
               document.body.style.paddingTop = `${this.state.height}px` :
               document.body.style.paddingTop = 0;
-      }
+    }
     
     render() {
       return (
         <div className="demo-big-content">
             <Layout>
-                <Header className={this.state.scroll > this.state.top ? "fixed-nav" : ""} title={<Link style={{textDecoration: 'none', color: 'white', fontFamily: 'Lobster, monospace', fontSize: '30px', fontWeight: 'bold'}} to="/">Orkun Ozgiray</Link>}>
+                <Header className={this.state.scroll > this.state.top ? "fixed-nav" : ""} title={<Link style={{textDecoration: 'none', color: 'white', fontFamily: 'Lobster, monospace', fontSize: '30px', fontWeight: 'bold', paddingRight: '132.1px'}} to="/">Orkun Ozgiray</Link>}>
                     <Navigation style={{fontFamily: 'Lobster, monospace'}} >
                         <Link style={{textDecoration: 'none', color: 'white', fontSize: '18px', textShadow: "2px 2px 4px #000000"}} to="/resume">Resume</Link>
                         <Link style={{textDecoration: 'none', color: 'white', fontSize: '18px', textShadow: "2px 2px 4px #000000"}} to="/aboutme">About Me</Link>
